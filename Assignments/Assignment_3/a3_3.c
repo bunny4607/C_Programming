@@ -1,5 +1,16 @@
 #include<stdio.h>
 
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : display even factors
+//  Description     : displaying even factos of number taken from user
+//  Input           : int 
+//  Output          : void 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
+
 void DisplayEvenFactor (int iNo )
 {
 

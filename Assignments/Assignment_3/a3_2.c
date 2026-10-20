@@ -1,4 +1,14 @@
 #include<stdio.h>
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : display factor
+//  Description     : displaying factors of number taken from user 
+//  Input           : int
+//  Output          : void 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
 void DisplayFactor (int iNo)
 {
     int i = 0 ;

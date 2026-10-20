@@ -4,6 +4,17 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : capital or small 
+//  Description     : changes capital to small and small to capital 
+//  Input           : char
+//  Output          : void 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
+
 void DisplayConvert(char cValue)
 {
     if((cValue >= 'a') && (cValue <= 'z'))

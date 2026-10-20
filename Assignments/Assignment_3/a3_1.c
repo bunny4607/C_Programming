@@ -1,5 +1,15 @@
 #include<stdio.h>
 
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : print 
+//  Description     : printing numbers 2x 
+//  Input           : int
+//  Output          : void 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
 
 void PrintEven(int iNo)
 {

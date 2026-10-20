@@ -2,6 +2,17 @@
 #include<stdlib.h>
 #include<stdbool.h>
 
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : vowels check
+//  Description     : checks if the char taken from user is a vowel
+//  Input           : char
+//  Output          : bool   
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
+
 bool checkVowel(char cValue)
 {
     if (cValue == 'a' || cValue == 'e' || cValue == 'i' || cValue == 'o' || cValue == 'u' || cValue == 'A' || cValue == 'E' || cValue == 'I' || cValue == 'O' || cValue == 'U')
