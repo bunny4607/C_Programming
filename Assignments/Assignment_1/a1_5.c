@@ -1,5 +1,17 @@
 #include<stdio.h>
 #include <stdlib.h>
+
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   :printing stars 
+//  Description     :  printing stars n number of times where n is taken from user 
+//  Input           : iint 
+//  Output          : void  
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
+
 void Accept(int iNo)
 {
     int iCnt = 0 ;

@@ -1,4 +1,14 @@
 #include<stdio.h>
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : printing
+//  Description     : printing numbers
+//  Input           : null
+//  Output          : void 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
 
 void Display()
 {

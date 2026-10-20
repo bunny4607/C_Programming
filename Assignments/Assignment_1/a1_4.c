@@ -4,6 +4,17 @@ typedef int BOOL;
 #define TRUE 1 
 #define FALSE 0
 
+//////////////////////////////////////////////////////////
+//
+//  Funciton name   : division by 5 
+//  Description     : checking if a number is divisble by 5 
+//  Input           : int
+//  Output          : bool 
+//  Author          : Vedant Kalidas Barne
+//  Date            : 20/10/2026
+//
+//////////////////////////////////////////////////////////
+
 BOOL Check (int iNo)
 {
     if ((iNo %5 ) == 0)
