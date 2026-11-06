@@ -13,7 +13,7 @@ Enter a number of columns : 4
 *	*	*	*
 */
 //  
-//  Input           : int 
+//  Input           : int , int 
 //  Output          : void 
 //  Author          : Vedant Kalidas Barne
 //  Date            : 6/11/2026

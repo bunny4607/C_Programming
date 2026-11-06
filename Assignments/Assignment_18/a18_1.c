@@ -3,7 +3,7 @@
 //////////////////////////////////////////////////////////
 //
 //  Funciton name   : prints pattern 
-//  Description     : prints the pattern blwo for i/p 
+//  Description     : prints the pattern  for i/p 
 /*
 Enter the number of rows : 4
 *	#	#	#	
