@@ -28,6 +28,10 @@ void OnlyLower(char *ch){
     }
     printf("%s\n", ch) ; 
 }
+//////////////////////////////////////////////////////// 
+//      Entery point 
+//////////////////////////////////////////////////////// 
+
 int main(){
 
     char cValue[30];
@@ -44,8 +48,10 @@ int main(){
             !(cValue[i] >= 'A' && cValue[i] <= 'Z') &&
             !(cValue[i] >= 'a' && cValue[i] <= 'z') &&
             !(cValue[i] == ' ')
-        )
-        return EXIT_FAILURE; 
+        ){
+        printf("Enter only alphabets "); 
+        return EXIT_FAILURE;
+        } 
     }
     
     OnlyLower(cValue); 
@@ -53,3 +59,17 @@ int main(){
     return EXIT_SUCCESS ; 
 
 }
+//////////////////////////////////////////////////////// 
+//
+//                  Sample output : 
+/*
+Enter a string : Marvellous Infosystems
+marvellous infosystems
+vedantbarne@Vedants-MacBook-Air-2 Assignment_23 % ./myexe
+Enter a string : Vedant Barne
+vedant barne
+vedantbarne@Vedants-MacBook-Air-2 Assignment_23 % ./myexe
+Enter a string : VEDant BARne
+vedant barne
+*/
+////////////////////////////////////////////////////////
