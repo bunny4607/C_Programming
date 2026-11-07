@@ -4,7 +4,7 @@
 /*
 .....................................................................
 
-Function name : ChkVowel
+Function name : chkVowel
 Description : true if string contains a vowel else false
 input : char *
 output : bool
@@ -13,19 +13,19 @@ Date : 8/11/2026
 
 .....................................................................
 */
-bool ChkVowel(char *str){
-    bool bRet = false;
+bool chkVowel(char *cValue){
+    bool bRet = false ;
 
-    while(*str != '\0'){
-        if(*str == 'a' || *str == 'e' || *str == 'i' || *str == 'o' || *str == 'u' ||
-           *str == 'A' || *str == 'E' || *str == 'I' || *str == 'O' || *str == 'U'){
-            bRet = true;
-            break;
+    while(*cValue != '\0'){
+        if(*cValue == 'a' || *cValue == 'e' || *cValue == 'i' || *cValue == 'o' || *cValue == 'u' ||
+           *cValue == 'A' || *cValue == 'E' || *cValue == 'I' || *cValue == 'O' || *cValue == 'U'){
+            bRet = true ;
+            break ;
         }
-        str++;
+        cValue++ ;
     }
 
-    return bRet;
+    return bRet ;
 }
 /*
 .....................................................................
@@ -39,19 +39,19 @@ bool ChkVowel(char *str){
 int main(){
 
     char arr[100] = {'\0'};
-    bool bRet = false;
+    bool bRet = false ;
 
     printf("Enter string :");
     if(scanf(" %99[^\n]", arr) != 1){
         fprintf(stderr, "Invalid input");
-        return EXIT_FAILURE;
+        return EXIT_FAILURE ;
     }
 
-    bRet = ChkVowel(arr);
+    bRet = chkVowel(arr);
 
-    if(bRet == true) printf("Contains Vowel");
+    if(bRet == true ) printf("Contains Vowel");
     else printf("There is no Vowel");
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS ;
 
 }
 /*
@@ -61,13 +61,15 @@ int main(){
 
 
 Enter string :marvellous
-Contains Vowel
+Contains Vowel%
 
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
 Enter string :Demo
-Contains Vowel
+Contains Vowel%
 
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
 Enter string :xyz
-There is no Vowel
+There is no Vowel%
 
 .....................................................................
 */

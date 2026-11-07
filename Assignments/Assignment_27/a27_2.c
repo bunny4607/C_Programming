@@ -4,7 +4,7 @@
 /*
 .....................................................................
 
-Function name : CountSmall
+Function name : countSmall
 Description : counts small characters in a string
 input : char *
 output : int
@@ -13,17 +13,17 @@ Date : 8/11/2026
 
 .....................................................................
 */
-int CountSmall(char *str){
-    int iCnt = 0;
+int countSmall(char *cValue){
+    int iCnt = 0 ;
 
-    while(*str != '\0'){
-        if(*str >= 'a' && *str <= 'z'){
-            iCnt++;
+    while(*cValue != '\0'){
+        if(*cValue >= 'a' && *cValue <= 'z'){
+            iCnt++ ;
         }
-        str++;
+        cValue++ ;
     }
 
-    return iCnt;
+    return iCnt ;
 }
 /*
 .....................................................................
@@ -37,18 +37,18 @@ int CountSmall(char *str){
 int main(){
 
     char arr[100] = {'\0'};
-    int iRet = 0;
+    int iRet = 0 ;
 
     printf("Enter string :");
     if(scanf(" %99[^\n]", arr) != 1){
         fprintf(stderr, "Invalid input");
-        return EXIT_FAILURE;
+        return EXIT_FAILURE ;
     }
 
-    iRet = CountSmall(arr);
+    iRet = countSmall(arr);
 
     printf("%d", iRet);
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS ;
 
 }
 /*
@@ -58,10 +58,11 @@ int main(){
 
 
 Enter string :Marvellous
-9
+9%
 
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
 Enter string :ABC
-0
+0%
 
 .....................................................................
 */

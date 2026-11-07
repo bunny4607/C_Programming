@@ -4,7 +4,7 @@
 /*
 .....................................................................
 
-Function name : Difference
+Function name : difference
 Description : frequency of small characters minus frequency of capital characters
 input : char *
 output : int
@@ -13,21 +13,21 @@ Date : 8/11/2026
 
 .....................................................................
 */
-int Difference(char *str){
-    int iSmall = 0;
-    int iCapital = 0;
+int difference(char *cValue){
+    int iSmall = 0 ;
+    int iCapital = 0 ;
 
-    while(*str != '\0'){
-        if(*str >= 'a' && *str <= 'z'){
-            iSmall++;
+    while(*cValue != '\0'){
+        if(*cValue >= 'a' && *cValue <= 'z'){
+            iSmall++ ;
         }
-        else if(*str >= 'A' && *str <= 'Z'){
-            iCapital++;
+        else if(*cValue >= 'A' && *cValue <= 'Z'){
+            iCapital++ ;
         }
-        str++;
+        cValue++ ;
     }
 
-    return iSmall - iCapital;
+    return iSmall - iCapital ;
 }
 /*
 .....................................................................
@@ -41,18 +41,18 @@ int Difference(char *str){
 int main(){
 
     char arr[100] = {'\0'};
-    int iRet = 0;
+    int iRet = 0 ;
 
     printf("Enter string :");
     if(scanf(" %99[^\n]", arr) != 1){
         fprintf(stderr, "Invalid input");
-        return EXIT_FAILURE;
+        return EXIT_FAILURE ;
     }
 
-    iRet = Difference(arr);
+    iRet = difference(arr);
 
     printf("%d", iRet);
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS ;
 
 }
 /*
@@ -62,10 +62,11 @@ int main(){
 
 
 Enter string :MarvellouS
-6
+6%
 
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
 Enter string :Marvellous
-8
+8%
 
 .....................................................................
 */

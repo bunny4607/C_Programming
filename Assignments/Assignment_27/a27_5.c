@@ -1,64 +1,75 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<string.h>
+#include<stdbool.h>
 /*
-..........................................................
+.....................................................................
 
-Function name : reverse string 
-Description : Reverses string taken from user 
-Input : string 
-Output : void 
-Author : Vedant Kalidas Barne 
+Function name : reverse
+Description : displays the string in reverse order
+input : char *
+output : void
+Author : Vedant Kalidas Barne
 Date : 8/11/2026
 
-..........................................................
+.....................................................................
 */
-void revString (char *cValue){
-    char cRev[40]; 
-    int i = 0 ; 
-    int j = 0 ; 
-    for(i = strlen(cValue) - 1 ; i>= 0 ; i--){
-        cRev[j] = cValue[i];
-        j++; 
+void reverse(char *cValue){
+    char *pStart = cValue ;
+    char *pEnd = cValue ;
+    char cTemp = '\0';
+
+    while(*pEnd != '\0'){
+        pEnd++ ;
     }
-    printf("%39s",cRev );
+    pEnd-- ;     // last valid character
+
+    while(pStart < pEnd){
+        cTemp = *pStart ;
+        *pStart = *pEnd ;
+        *pEnd = cTemp ;
+
+        pStart++ ;
+        pEnd-- ;
+    }
+
+    printf("%s", cValue);
 }
 /*
-..........................................................
+.....................................................................
 
-                    Entery point 
 
-..........................................................
+                            Entry point
+
+
+.....................................................................
 */
-
 int main(){
-    char cValue[40]; 
 
-    printf("Enter a string : "); 
-    if(scanf("%[^\n]s", cValue )!= 1){
-        fprintf(stderr, "Inavlid input "); 
-        return EXIT_FAILURE ; 
+    char arr[100] = {'\0'};
 
+    printf("Enter string :");
+    if(scanf(" %99[^\n]", arr) != 1){
+        fprintf(stderr, "Invalid input");
+        return EXIT_FAILURE ;
     }
 
-    revString(cValue);
-    return EXIT_SUCCESS ; 
+    reverse(arr);
+
+    return EXIT_SUCCESS ;
 
 }
 /*
-..........................................................
+.....................................................................
+
+                                Sample output
 
 
-                Sample Output 
+Enter string :MarvellouS
+SuollevraM%
 
-Enter a string : marvellous 
-suollevram%  
-                          
-                          
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
+Enter string :abc
+cba%
 
-Enter a string : vedant
-tnadev%    
-
-
-..........................................................
+.....................................................................
 */

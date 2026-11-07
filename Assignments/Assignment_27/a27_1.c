@@ -4,7 +4,7 @@
 /*
 .....................................................................
 
-Function name : CountCapital
+Function name : countCapital
 Description : counts capital characters in a string
 input : char *
 output : int
@@ -13,17 +13,17 @@ Date : 8/11/2026
 
 .....................................................................
 */
-int CountCapital(char *str){
-    int iCnt = 0;
+int countCapital(char *cValue){
+    int iCnt = 0 ;
 
-    while(*str != '\0'){
-        if(*str >= 'A' && *str <= 'Z'){
-            iCnt++;
+    while(*cValue != '\0'){
+        if(*cValue >= 'A' && *cValue <= 'Z'){
+            iCnt++ ;
         }
-        str++;
+        cValue++ ;
     }
 
-    return iCnt;
+    return iCnt ;
 }
 /*
 .....................................................................
@@ -37,18 +37,18 @@ int CountCapital(char *str){
 int main(){
 
     char arr[100] = {'\0'};
-    int iRet = 0;
+    int iRet = 0 ;
 
     printf("Enter string :");
     if(scanf(" %99[^\n]", arr) != 1){
         fprintf(stderr, "Invalid input");
-        return EXIT_FAILURE;
+        return EXIT_FAILURE ;
     }
 
-    iRet = CountCapital(arr);
+    iRet = countCapital(arr);
 
     printf("%d", iRet);
-    return EXIT_SUCCESS;
+    return EXIT_SUCCESS ;
 
 }
 /*
@@ -58,10 +58,11 @@ int main(){
 
 
 Enter string :Marvellous Multi OS
-4
+4%
 
+vedantbarne@Vedants-MacBook-Air-2 Assignment_27 % ./myexe
 Enter string :abc
-0
+0%
 
 .....................................................................
 */
